@@ -5,60 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tech Rahul | AI & Future Tech</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
     body {
       font-family: "Poppins", sans-serif;
       margin: 0;
-      background: #0e0e10;
+      background: linear-gradient(135deg, #000000, #0f2027, #203a43, #2c5364);
       color: white;
       text-align: center;
+      animation: gradientBG 10s ease infinite;
+      background-size: 400% 400%;
     }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
     header {
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      padding: 20px 0;
-      font-size: 28px;
+      background: rgba(0,0,0,0.5);
+      padding: 25px 0;
+      font-size: 30px;
       font-weight: bold;
+      color: #00c6ff;
       letter-spacing: 1px;
-      color: #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
     }
+
     nav {
-      background: #1a1a1d;
-      padding: 10px 0;
+      margin-top: 10px;
     }
     nav a {
       color: #00c6ff;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 18px;
       font-weight: 500;
+      transition: 0.3s;
     }
     nav a:hover {
       color: #fff;
+      text-shadow: 0 0 10px #00c6ff;
     }
+
     section {
-      padding: 60px 20px;
+      padding: 70px 25px;
       max-width: 900px;
       margin: auto;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
+
     h2 {
       color: #00c6ff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
+
+    p {
+      line-height: 1.8;
+      color: #ddd;
+    }
+
     .btn {
-      background: #00c6ff;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
       color: #fff;
-      padding: 12px 25px;
+      padding: 12px 30px;
       border: none;
       border-radius: 30px;
       cursor: pointer;
+      font-weight: 600;
+      margin-top: 20px;
       transition: 0.3s;
     }
+
     .btn:hover {
-      background: #0072ff;
+      box-shadow: 0 0 20px #00c6ff;
+      transform: scale(1.05);
     }
+
+    .socials {
+      margin-top: 30px;
+    }
+
+    .socials a {
+      color: #00c6ff;
+      margin: 0 10px;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #00c6ff;
+    }
+
     footer {
-      background: #1a1a1d;
-      padding: 15px;
-      font-size: 14px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
       color: #aaa;
+      font-size: 14px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -75,16 +126,34 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hey, I’m <b>Rahul</b> — a tech enthusiast exploring the future of AI, apps, and earning tools. 
-    This site is built to share knowledge, updates, and smart tools that help you grow digitally 🚀.</p>
+    <p>Hey, I’m <b>Rahul</b> — a tech enthusiast exploring the future of AI, apps, and digital growth tools. 
+    My goal is to simplify technology and share ways you can earn, learn, and create smarter 💡.</p>
   </section>
 
   <section id="blogs">
-    <h2>Latest Blogs</h2>
-    <p>📖 Check my latest blog post on <a href="https://techukrahul.blogspot.com/2025/11/top-7-ai-tools-that-will-rule-2026-free.html" target="_blank">Top 7 AI Tools That Will Rule 2026</a></p>
+    <h2>Latest Blog</h2>
+    <p>📖 Check my latest blog on <a href="https://techukrahul.blogspot.com/2025/11/top-7-ai-tools-that-will-rule-2026-free.html" target="_blank">Top 7 AI Tools That Will Rule 2026</a></p>
   </section>
 
   <section id="tools">
     <h2>Free AI Tools</h2>
-    <p>Explore free tools and resources for content creation, video editing, and automation.</p>
-    <button class="btn" onclick="window.open('htt
+    <p>Explore trending AI tools for editing, earning, and automation.</p>
+    <button class="btn" onclick="window.open('https://techukrahul.blogspot.com','_blank')">Visit Blog</button>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <p>📩 For collaborations or AI projects: <b>techrahulblog@gmail.com</b></p>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">🌐</a>
+      <a href="https://youtube.com" target="_blank">▶️</a>
+      <a href="https://techukrahul.blogspot.com" target="_blank">📰</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Tech Rahul | Built with 💙 on GitHub Pages
+  </footer>
+
+</body>
+</html>
