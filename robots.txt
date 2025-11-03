@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techrahulblog.github.io/sitemap.xml
